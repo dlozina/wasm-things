@@ -20,6 +20,8 @@ impl GetMessage {
     }
 }
 
+// Run the host program with command:
+//cargo run --release -- hello_component.wasm
 #[async_std::main]
 async fn main() -> anyhow::Result<()> {
     GetMessage::parse().run().await
